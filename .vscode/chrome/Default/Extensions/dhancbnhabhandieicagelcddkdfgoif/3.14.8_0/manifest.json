@@ -1,0 +1,23 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "extractor.js", "getModule.js", "mytube.js", "button.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "Download YouTube and other online videos",
+   "icons": {
+      "128": "main.png",
+      "48": "main.png"
+   },
+   "key": "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAMFjI2M0BaRmRR74KdT8mDCW8lMUf7Mild1AQ+CMqLyxJOYSRE+BKWcbNFu7Yll4EdgZzVYarovpMbFv7i4QbicCAwEAAQ==",
+   "manifest_version": 2,
+   "name": "Allavsoft video downloader converter",
+   "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+   "plugins": [ {
+      "path": "npBVDChromePlugin.dll",
+      "public": false
+   } ],
+   "version": "3.14.8"
+}
